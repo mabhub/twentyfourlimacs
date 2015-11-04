@@ -9,73 +9,72 @@
     list-style-type: none;
 }
 
-.eo-event-past .event-link {
-    position: relative;
+.eo-event-past {
+    .event-link {
+        position: relative;
 
-    display: block;
+        display: block;
 
-    padding: .5em;
+        padding: .5em;
 
-    text-decoration: none;
+        transition: background-color 300ms ease;
+        text-decoration: none;
 
-    color: inherit;
-    border: 1px solid rgba(200, 200, 200, .25);
-    border-right-width: .5em;
+        color: inherit;
+        border: 1px solid rgba(200, 200, 200, .25);
+        border-right-width: .5em;
+    }
 
-	transition: background-color 300ms ease;
-}
+    .event-link:hover {
+        background-color: rgba(200, 200, 200, .1);
+    }
 
-.eo-event-past .event-link:hover {
-	background-color: rgba(200, 200, 200, .1);
-}
+    &.eo-event-tag-photos .event-link:after {
+        font-size: .8em;
+        font-style: italic;
 
-.eo-event-past.eo-event-tag-photos .event-link:after {
-    font-size: .8em;
-    font-style: italic;
+        position: absolute;
+        right: .25em;
+        bottom: 0;
 
-    position: absolute;
-    right: .25em;
-    bottom: 0;
+        display: block;
 
-    display: block;
+        content: 'Photos';
 
-    content: 'Photos';
+        color: #dd9933;
+    }
 
-    color: #dd9933;
-}
+    + .eo-event-past {
+        margin-top: .5em;
+    }
 
-.eo-event-past + .eo-event-past {
-    margin-top: .5em;
-}
+    .event-title {
+        font-size: 1.2em;
+        font-weight: bold;
 
-.eo-event-past .event-title {
-    font-size: 1.2em;
-    font-weight: bold;
+        text-decoration: none;
 
-    text-decoration: none;
+        color: #dd9933;
+    }
 
-    color: #dd9933;
-}
+    .event-date {
+        display: block;
+    }
 
-.eo-event-past .event-date {
-    display: block;
-}
+    .event-date::first-letter {
+        text-transform: uppercase;
+    }
 
-.eo-event-past .event-date::first-letter {
-    text-transform: uppercase;
-}
+    .event-date,
+    .event-cats,
+    .event-tags {
+        font-style: italic;
+    }
 
-.eo-event-past .event-date,
-.eo-event-past .event-cats,
-.eo-event-past .event-tags {
-    font-style: italic;
-}
-
-.eo-event-past .event-cats a,
-.eo-event-past .event-tags a {
-    text-decoration: none;
-}
-
-.eo-event-cat-galerie {
-    /*background-color: #eee;*/
+    .event-cats,
+    .event-tags {
+        a {
+            text-decoration: none;
+        }
+    }
 }

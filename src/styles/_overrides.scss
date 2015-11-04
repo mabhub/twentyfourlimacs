@@ -4,36 +4,41 @@
 
 $main-color: #dd9933;
 
-a ,
-a:active,
+a,
 a:hover,
-.site-navigation a:hover,
+a:active,
 .site-navigation .current_page_item > a,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-item > a,
 .site-navigation .current-menu-ancestor > a,
-.entry-title a:hover,
-.entry-meta a:hover,
-.cat-links a:hover,
-.entry-content .edit-link a:hover,
 .hentry .mejs-controls .mejs-button button:hover,
-.post-navigation a:hover,
-.image-navigation a:hover,
-.comment-author a:hover,
-.comment-list .pingback a:hover,
-.comment-list .trackback a:hover,
-.comment-metadata a:hover,
-.comment-reply-title small a:hover ,
-.widget a:hover,
-.widget-title a:hover,
-.widget_twentyfourteen_ephemera .entry-meta a:hover,
-.content-sidebar .widget a,
-.content-sidebar .widget a:hover,
-.content-sidebar .widget .widget-title a:hover,
-.content-sidebar .widget_twentyfourteen_ephemera .entry-meta a:hover,
-.site-info a:hover ,
-.featured-content a:hover {
+.content-sidebar .widget a {
 	color: $main-color;
+}
+
+.site-navigation,
+.entry-title,
+.entry-meta,
+.cat-links,
+.entry-content .edit-link,
+.post-navigation,
+.image-navigation,
+.comment-author,
+.comment-list .pingback,
+.comment-list .trackback,
+.comment-metadata,
+.comment-reply-title small,
+.widget,
+.widget-title,
+.widget_twentyfourteen_ephemera .entry-meta,
+.content-sidebar .widget,
+.content-sidebar .widget .widget-title,
+.content-sidebar .widget_twentyfourteen_ephemera .entry-meta,
+.site-info,
+.featured-content {
+	a:hover {
+		color: $main-color;
+	}
 }
 
 ::selection,
@@ -43,26 +48,6 @@ a:hover,
 	background: $main-color;
 }
 
-button,
-.button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-button:hover,
-button:focus,
-.button:hover,
-.button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="reset"]:hover,
-input[type="reset"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-button:active,
-.button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active,
 .search-toggle,
 .search-toggle:hover,
 .search-toggle.active,
@@ -70,37 +55,38 @@ input[type="submit"]:active,
 .hentry .mejs-overlay:hover .mejs-overlay-button,
 .widget button,
 .widget .button,
-.widget input[type="button"],
-.widget input[type="reset"],
-.widget input[type="submit"],
-.widget input[type="button"]:hover,
-.widget input[type="button"]:focus,
-.widget input[type="reset"]:hover,
-.widget input[type="reset"]:focus,
-.widget input[type="submit"]:hover,
-.widget input[type="submit"]:focus ,
-.widget input[type="button"]:active,
-.widget input[type="reset"]:active,
-.widget input[type="submit"]:active,
 .widget_calendar tbody a,
 .widget_calendar tbody a:hover,
-.content-sidebar .widget input[type="button"],
-.content-sidebar .widget input[type="reset"],
-.content-sidebar .widget input[type="submit"],
-.content-sidebar .widget input[type="button"]:hover,
-.content-sidebar .widget input[type="button"]:focus,
-.content-sidebar .widget input[type="reset"]:hover,
-.content-sidebar .widget input[type="reset"]:focus,
-.content-sidebar .widget input[type="submit"]:hover,
-.content-sidebar .widget input[type="submit"]:focus,
-.content-sidebar .widget input[type="button"]:active,
-.content-sidebar .widget input[type="reset"]:active,
-.content-sidebar .widget input[type="submit"]:active,
 .slider-control-paging a:hover:before,
 .slider-control-paging .slider-active:before,
 .slider-control-paging .slider-active:hover:before,
 .slider-direction-nav a:hover {
 	background-color: $main-color;
+}
+
+button,
+.button {
+	&,
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: $main-color;
+	}
+}
+
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	.content-sidebar .widget &,
+	.widget &,
+	& {
+		&,
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $main-color;
+		}
+	}
 }
 
 .site {
@@ -138,7 +124,6 @@ input[type="submit"]:active,
 	}
 }
 
-
 @media screen and (min-width: 783px) {
 	.primary-navigation ul ul,
 	.primary-navigation ul ul a:hover,
@@ -146,16 +131,16 @@ input[type="submit"]:active,
 		background-color: $main-color;
 	}
 
-    .primary-navigation li:hover > a,
+	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: $main-color;
 		color: #fff;
+		background-color: $main-color;
 	}
 }
 
 @media screen and (min-width: 846px) {
 	.site-content .has-post-thumbnail .entry-header,
-    .full-width .site-content .hentry.has-post-thumbnail:first-child {
+	.full-width .site-content .hentry.has-post-thumbnail:first-child {
 		margin-top: auto;
 	}
 }
@@ -187,5 +172,6 @@ input[type="submit"]:active,
 
 .register-button .button {
 	display: inline-block;
+
 	margin: 0 5px 5px 0;
 }
