@@ -1,0 +1,23 @@
+{
+  "name": "twentyfourlimacs",
+  "version": "1.0.0",
+  "description": "A Twenty Fouteen child theme made for Limacs Mtb club from Lectoure (Gers, France)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass src/styles/main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabhub/twentyfourlimacs.git"
+  },
+  "author": "Benjamin Marguin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mabhub/twentyfourlimacs/issues"
+  },
+  "homepage": "https://github.com/mabhub/twentyfourlimacs#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.1"
+  }
+}
