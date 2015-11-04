@@ -1,6 +1,9 @@
 /**
  * parent style.css override
  */
+
+$main-color: #dd9933;
+
 a ,
 a:active,
 a:hover,
@@ -30,14 +33,14 @@ a:hover,
 .content-sidebar .widget_twentyfourteen_ephemera .entry-meta a:hover,
 .site-info a:hover ,
 .featured-content a:hover {
-	color: #dd9933;
+	color: $main-color;
 }
 
 ::selection,
 ::-moz-selection,
 .hentry .mejs-controls .mejs-time-rail .mejs-time-current,
 .page-links a:hover {
-	background: #dd9933;
+	background: $main-color;
 }
 
 button,
@@ -97,7 +100,7 @@ input[type="submit"]:active,
 .slider-control-paging .slider-active:before,
 .slider-control-paging .slider-active:hover:before,
 .slider-direction-nav a:hover {
-	background-color: #dd9933;
+	background-color: $main-color;
 }
 
 .site {
@@ -106,16 +109,16 @@ input[type="submit"]:active,
 
 .entry-meta .tag-links a:hover,
 .entry-meta .tag-links a:hover:before {
-	border-right-color: #dd9933;
+	border-right-color: $main-color;
 }
 
 .page-links a:hover {
-	border: 1px solid #dd9933;
+	border: 1px solid $main-color;
 }
 
 .paging-navigation .page-numbers.current,
 .paging-navigation a:hover {
-	border-top: 5px solid #dd9933;
+	border-top: 5px solid $main-color;
 }
 
 .singular .site-content .hentry.has-post-thumbnail {
@@ -140,12 +143,12 @@ input[type="submit"]:active,
 	.primary-navigation ul ul,
 	.primary-navigation ul ul a:hover,
 	.primary-navigation ul ul li.focus > a {
-		background-color: #dd9933;
+		background-color: $main-color;
 	}
 
     .primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: #dd9933;
+		background-color: $main-color;
 		color: #fff;
 	}
 }
@@ -163,7 +166,7 @@ input[type="submit"]:active,
 	.secondary-navigation li.focus > a,
 	.secondary-navigation ul ul a:hover,
 	.secondary-navigation ul ul li.focus > a {
-		background-color: #dd9933;
+		background-color: $main-color;
 	}
 }
 
