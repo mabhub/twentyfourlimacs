@@ -36,7 +36,7 @@ get_header(); ?>
 						$start       = eo_get_event_schedule()['start'];
 						$register_on = ($start > $now);
 						$formId      = uniqid();
-						if ($register_on && !has_term('Sortie', 'event-category')):
+						if ($register_on && !has_term('Sortie', 'event-category') && !has_term('Sans inscription', 'event-category')):
 					?>
 						<a class="fancybox-inline button" href="#inscription-<?php echo $formId; ?>">S'inscrire</a>
 						<div class="fancybox-hidden" style="display: none;">
